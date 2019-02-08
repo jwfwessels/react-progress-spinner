@@ -33,10 +33,11 @@ SVG stroke length and how to animate it.
 
 
 ---
-# Exampe:
-For demonstartion perposes a Spin!/stop toggle button has been included that 
-toggles the animate property on the progress-spinner. As well as a Start and end button that simulates progress via means of a setTimeout function.
+# Example:
+This repo contains an example folder. it was bootstrapped with create-react-app and serves as an example of how the component could be used in a project.
 
+For demonstartion purposes a Spin!/stop toggle button has been included that 
+toggles the animate property on the progress-spinner. As well as a Start and end button that simulates progress via means of a setTimeout function.
 
 
 ## Usage
@@ -54,4 +55,6 @@ class Example extends Component {
   }
 }
 ```
-
+---
+# Development
+The progess-spinner web component was scaffolded with Rollup and jest was used for testing with enzyme. 
