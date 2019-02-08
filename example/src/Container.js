@@ -18,7 +18,7 @@ class Container extends Component {
         this.setState({ isToggled: !this.state.isToggled });
     }
 
-    // little recursive setTimout to simulate data coming in over a network :) 
+    // little recursive setTimout to simulate data coming in over a network :)
     startTicker() {
         let { value } = this.state;
         this.ticker = setTimeout(() => {

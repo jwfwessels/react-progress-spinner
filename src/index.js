@@ -15,15 +15,20 @@ export default class ExampleComponent extends Component {
     render() {
         const { value, animate, radius = 80 } = this.props;
         if (isValid(value)) {
-            const center = radius + 5;
-            const length = radius * 2 * Math.PI;
-            const percent = (parseFloat(value) / 100) * length;
+            let rad = radius >= 80 ? radius : 80;
 
+            const center = rad + 5;
+            const length = rad * 2 * Math.PI;
+            const percent = (parseFloat(value) / 100) * length;
+            const diameter = center * 2;
             return (
-                <div className={styles.container}>
+                <div
+                    className={styles.container}
+                    style={{ width: diameter, height: diameter }}
+                >
                     <svg
                         className={styles.spinner}
-                        viewBox={`0 0 ${center * 2} ${center * 2}`}
+                        viewBox={`0 0 ${diameter} ${diameter}`}
                         style={{
                             animationPlayState: animate ? "running" : "paused"
                         }}
@@ -33,13 +38,13 @@ export default class ExampleComponent extends Component {
                             className={styles.path}
                             cx={center}
                             cy={center}
-                            r={radius}
+                            r={rad}
                         />
                         <circle
                             className={styles.progress}
-                            cx="85"
-                            cy="85"
-                            r="80"
+                            cx={center}
+                            cy={center}
+                            r={rad}
                             strokeDasharray={`${length} ${length}`}
                             strokeDashoffset={length - percent}
                         />
