@@ -1,5 +1,28 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+.App {
+    font-family: sans-serif;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Button {
+    margin: 20px 5px;
+
+    min-width: 5rem;
+    background-color: #409fff;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+}
+
+.Button-group {
+    display: flex;
+
 }

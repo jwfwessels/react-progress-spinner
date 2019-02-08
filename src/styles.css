@@ -1,8 +1,56 @@
-/* add css styles here (optional) */
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+.spinner {
+    animation: spinning 2s linear infinite;
+}
+
+.container {
+    position: relative;
+    width: 160px;
+    height: 160px;
+}
+
+.progress {
+    stroke: #409fff;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    fill: transparent;
+    transition: stroke-dashoffset 200ms ease-in-out;
+}
+
+.path {
+    stroke: #e8ebed;
+    stroke-width: 10px;
+    fill: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 30%;
+    /* top: 50%; */
+    /* left: 50%; */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    /* transform: translate(-50%, -50%); */
+}
+
+.labelText {
+    font-size: 60px;
+    text-align: center;
+    line-height: 1;
+}
+
+.labelPerc {
+    vertical-align: top;
+    font-size: 24px;
+    color: #e8ebed;
 }
