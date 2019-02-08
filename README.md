@@ -16,14 +16,14 @@ bar proportianally.
 ### **animate** _[optional, default = false]: boolean_
 Optional boolean argument that informs the underlying component whether it 
 should animate AKA spin. if set to `true` the whole svg will spin clockwise at
-1 revelution every 2 seconds. 
+1 revolution every 2 seconds. 
 
-_note:_ This value can be updated in realtime which has the effect of pausing 
-the anmiation.
+_note:_ This value can be updated in real time which has the effect of pausing 
+the animation.
 
 ### **radius** _[optional, default = 80]: 80 =< Number_
-As a first attempt at making the compoent more re-usable Ive made it possible to set its radius programatically. This will configure the SVG's width, height, 
-viewBox, aswell as the circles radius and centerpoint.
+As a first attempt at making the component more re-usable Ive made it possible to set its radius programmatically. This will configure the SVG's width, height, 
+viewBox, as well as the circles radius and center point.
 Sizes less than 80 will not work at this time.
 
 ## Resources:
@@ -36,7 +36,7 @@ SVG stroke length and how to animate it.
 # Example:
 This repo contains an example folder. it was bootstrapped with create-react-app and serves as an example of how the component could be used in a project.
 
-For demonstartion purposes a Spin!/stop toggle button has been included that 
+For demonstration purposes a Spin!/stop toggle button has been included that 
 toggles the animate property on the progress-spinner. As well as a Start and end button that simulates progress via means of a setTimeout function.
 
 
@@ -57,4 +57,4 @@ class Example extends Component {
 ```
 ---
 # Development
-The progess-spinner web component was scaffolded with Rollup and jest was used for testing with enzyme. 
+The progress-spinner web component was scaffolded with Rollup and jest was used for testing with enzyme. 
